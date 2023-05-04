@@ -225,7 +225,7 @@ def main():
                         default="features")
     parser.add_argument('--image-dir', dest='image_dir',
                         help='directory with images',
-                        default="/home/zsb/coco2014/kar_val/")
+                        default="dataset")
     parser.add_argument('--bbox-dir', dest='bbox_dir',
                         help='directory with bbox',
                         default="bbox")

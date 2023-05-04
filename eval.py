@@ -189,7 +189,7 @@ def main():
                         default="features")
     parser.add_argument('--image-dir', dest='image_dir',
                         help='directory with images',
-                        default="/home/zsb/coco2014/kar_tes/")
+                        default="dataset")
     parser.add_argument('--bbox-dir', dest='bbox_dir',
                         help='directory with bbox',
                         default="bbox")
@@ -232,7 +232,7 @@ def main():
     patch_size = int(patch_size)
 
     tranform = transforms.ToTensor()
-    patch = cv2.imread('/home/zsb/bottom-up-attention-open/test_out.png')
+    patch = cv2.imread('test_out.png')
     patch = tranform(patch)
     s = 150
     im_scale = 1
